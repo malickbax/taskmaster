@@ -1,2 +1,3 @@
 # Taskmaster - Task management application
-- Orginal codebase provided. Built using jQuery, to simplify DOM manipulation and Bootstrap
+- This is a task management tool used to add and track tasks. 
+- Code has been adjusted using jQuery, and Bootstrap to simplify and make UI/UX more user friendly.
