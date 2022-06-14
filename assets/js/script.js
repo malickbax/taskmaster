@@ -320,3 +320,8 @@ $("#trash").droppable({
 $("#modalDueDate").datepicker({
   minDate: 0
 });
+
+var auditTask = function(taskEl) {
+  // to ensure element is getting to the function
+  console.log(taskEl);
+};
