@@ -165,7 +165,7 @@ $(".list-group").on("click", "p", function() {
 });
 
 // editable field was un-focused
-$(".list-group").on("blur", "textarea", function() {
+$(".list-group").on("change ", "textarea", function() {
   // get current value of textarea
   var text = $(this).val();
 
@@ -194,20 +194,41 @@ $(".list-group").on("blur", "textarea", function() {
 // due date was clicked
 $(".list-group").on("click", "span", function() {
   // get current text
-  var date = $(this)
-    .text()
-    .trim();
+  var date = $(this).text().trim();
 
   // create new input element
-  var dateInput = $("<input>")
-    .attr("type", "text")
-    .addClass("form-control")
-    .val(date);
+  var dateInput = $("<input>").attr("type", "text").addClass("form-control").val(date);
+
   $(this).replaceWith(dateInput);
+
+  // enable jquery ui datepicker
+  dateInput.datepicker({
+    minDate: 1,
+    onClose: function() {
+      // when calendar is closed, force a "change" event on the `dateInput`
+      $(this).trigger("change");
+    }
+  });
 
   // automatically bring up the calendar
   dateInput.trigger("focus");
 });
+// $(".list-group").on("click", "span", function() {
+//   // get current text
+//   var date = $(this)
+//     .text()
+//     .trim();
+
+//   // create new input element
+//   var dateInput = $("<input>")
+//     .attr("type", "text")
+//     .addClass("form-control")
+//     .val(date);
+//   $(this).replaceWith(dateInput);
+
+//   // automatically bring up the calendar
+//   dateInput.trigger("focus");
+// });
 
 // value of due date was changed
 $(".list-group").on("change", "input[type='text']", function() {
@@ -245,3 +266,65 @@ $("#remove-tasks").on("click", function() {
 
 // load tasks for the first time
 loadTasks();
+<<<<<<< HEAD
+=======
+
+// $(".card .list-group").sortable({
+//   connectWith: $(".card .list-group")
+// });
+
+$(".card .list-group").sortable({
+  connectWith: $(".card .list-group"),
+  scroll: false,
+  tolerance: "pointer",
+  helper: "clone",
+  activate: function(event) {
+    console.log("activate", this);
+  },
+  deactivate: function(event) {
+    console.log("deactivate", this);
+  },
+  over: function(event) {
+    console.log("over", event.target);
+  },
+  out: function(event) {
+    console.log("out", event.target);
+  },
+  // update: function(event) {
+  //   console.log("update", this);
+  // }
+  // update: function(event) {
+  //   console.log($(this).children());
+  // }
+  update: function(event) {
+    // loop over current set of children in sortable list
+    $(this).children().each(function() {
+      console.log($(this));
+    });
+  }
+});
+$("#trash").droppable({
+  accept: ".card .list-group-item",
+  tolerance: "touch",
+  drop: function(event, ui) {
+    console.log("drop");
+    ui.draggable.remove();
+  },
+  over: function(event, ui) {
+    console.log("over");
+  },
+  out: function(event, ui) {
+    console.log("out");
+  }
+});
+
+
+$("#modalDueDate").datepicker({
+  minDate: 0
+});
+
+var auditTask = function(taskEl) {
+  // to ensure element is getting to the function
+  console.log(taskEl);
+};
+>>>>>>> develop
