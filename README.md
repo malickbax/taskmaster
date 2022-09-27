@@ -1,4 +1,4 @@
-# Taskmaster - Task Management Application
+# Taskmaster Pro - Task Management Application
 
 ## Description
 - This is a task management tool used to add and track tasks. Code has been created using jQuery, and Bootstrap to simplify and make UI/UX more user friendly. The applciation features a clean interface and an improved user experience and draggable functionality to update or delete tasks.
