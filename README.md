@@ -18,7 +18,7 @@
 - Deletea a task: To delete a task, click and drag to the red trash bin area. User can clear all tasks by selecting "Delete All Tasks".
 
 ## Screenshot
-![Screenshot](/assets/css/Screenshot.jpeg)
+![Screenshot](assets/css/Screenshot.jpeg)
 
 ## Tests
 - No test is required. Application is ready to use
