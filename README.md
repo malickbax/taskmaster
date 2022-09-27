@@ -3,6 +3,14 @@
 ## Description
 - This is a task management tool used to add and track tasks. Code has been created using jQuery, and Bootstrap to simplify and make UI/UX more user friendly. The applciation features a clean interface and an improved user experience and draggable functionality to update or delete tasks.
 
+## Table of Contents
+- [Deployed Link](#deployed-link)
+- [Features](#features)
+- [Usage](#usage)
+- [Screenshot](#usage)
+- [Test](#test)
+- [Questions](#questions)
+
 ## Deployed link
 - Please click on the link below to access the application 
 - https://malickbax.github.io/taskmaster/
@@ -20,7 +28,7 @@
 ## Screenshot
 ![Screenshot](assets/css/Screenshot.jpg)
 
-## Tests
+## Test
 - No test is required. Application is deployed and ready for usage.
 
 ## Questions
