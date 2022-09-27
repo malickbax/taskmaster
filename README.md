@@ -21,7 +21,7 @@
 ![Screenshot](assets/css/Screenshot.jpg)
 
 ## Tests
-- No test is required. Application is ready to use
+- No test is required. Application is deployed and ready for usage.
 
 ## Questions
 **Malick Ba**
