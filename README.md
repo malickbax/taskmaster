@@ -15,7 +15,7 @@
 - Select "Add Task" from the left viewer pane. A modal will open up. Enter task details (descriptio, due date) and select "Save Task" to save.
 - Tasks appear in the "To Do" box. To update the task's status, click and drag the task to a new status box.
 - To edit a task's text, click on the task body and it will turn into a textbox. Edit text and click outside of the box area to save. To edit the due date, click on the existing date and the calendar will pop back up. Select new date and changes will be applied.
-- Deletea a task: To delete a task, click and drag to the red trash bin area. User can clear all tasks by clicking on the "Delete All Tasks" button.
+- Delete a task: To delete, click and drag to the red trash bin area. User can clear all tasks by clicking on the "Delete All Tasks" button.
 
 ## Screenshot
 ![Screenshot](assets/css/Screenshot.jpg)
