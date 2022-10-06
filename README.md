@@ -29,7 +29,7 @@
 ![Screenshot](assets/css/Screenshot-dashboard.jpg)
 
 ## Test
-- No test is required. Application is deployed and ready for usage.
+- No test is required. Application is deployed and ready for usage
 
 ## Questions
 **Malick Ba**
